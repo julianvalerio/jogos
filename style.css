@@ -72,3 +72,18 @@ border-radius: 10px; text-align: center;}
     display: flex; align-items: center; 
     justify-content: center; border: 2px solid #333;
     cursor: pointer;}
+
+
+.modal-snake{
+    display: none;
+    position: fixed;
+    inset: 0;
+    background: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+canvas{
+    background: #f2f2f2;
+    border: 2px solid #333;
+}

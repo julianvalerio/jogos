@@ -19,7 +19,7 @@
                         Snake
                     </span>
                     <p class="card_text">Jogo da cobrinha</p>
-                    <button class="card_btn">Jogar</button>
+                    <button class="card_btn" onclick="openModalSnake()">Jogar</button>
                 </div>
             </div>
 
@@ -58,7 +58,7 @@
                         Snake
                     </span>
                     <p class="card_text">Jogo da cobrinha</p>
-                    <button class="card_btn">Jogar</button>
+                    <button class="card_btn" onclick="openModalSnake()">Jogar</button>
                 </div>
             </div>
 
@@ -97,8 +97,16 @@
             <p id="status"></p>
         </div>
     </div>
+    <div class="modal-snake" id="modal-snake" onclick="closeModalSnake(event)">
+        <div class="modal-content" >
+            <h3>Snake</h3>
+            <canvas id="game" width="400" height="400"></canvas>
+            <p id="status-snake"></p>
+        </div>
+    </div>
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
     <script src="jogos.js"></script>
     <script src="velha.js"></script>
+    <script src="snake.js"></script>
 </body>
 </html>
